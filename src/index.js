@@ -1,14 +1,20 @@
-import _ from 'lodash';
+// import _ from 'lodash';
+import { cube } from './math.js';
 import printMe from './print.js';
 import './style.css';
 import Icon from './icon.svg';
 import Data from './data.xml';
 
 function component(){
-    var element = document.createElement('div');
+    // var element = document.createElement('div');
+    var element = document.createElement('pre');
     var btn = document.createElement('button');
 
-    element.innerHTML = _.join(['Hello', 'webpack', '你好，中国！'], ' ');
+    // element.innerHTML = _.join(['Hello', 'webpack', '你好，中国！'], ' ');
+    element.innerHTML = [
+        'Hello webpack!',
+        '5 cubed is equal to ' + cube(5)
+    ].join('\n\n');
     element.classList.add('hello');
 
     btn.innerHTML = 'Click me and check the console!';
