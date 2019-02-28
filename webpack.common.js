@@ -51,5 +51,10 @@
                      ]
                  }
              ]
+   },
+         optimization: {
+             splitChunks: {
+                 chunks: "all"
+             }
          }
- };
+     };
