@@ -4,7 +4,8 @@
 
      module.exports = {
        entry: {
-         app: './src/index.js'
+         app: './src/index.js',
+         another: './src/another-module.js'
        },
    plugins: [
          new CleanWebpackPlugin(['dist']),
